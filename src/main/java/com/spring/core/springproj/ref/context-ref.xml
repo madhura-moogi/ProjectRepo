@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"	
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.spring.core.springproj.pojo.BaseClass" name="baseObj">
+	<property name="num" value="123"></property>
+</bean>
+
+<bean class="com.spring.core.springproj.pojo.ReferringClass" name="refObj">
+	<property name="x" value="456"></property>
+	<property name="obj">
+		<ref bean="baseObj"/>
+	</property>
+</bean>
+</beans>

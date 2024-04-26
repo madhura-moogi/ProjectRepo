@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"	
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.spring.core.springproj.pojo.Student" name="student1">
+		<property name="studentId"><value>1</value></property>
+		<property name="name"><value>Madhura</value></property>
+		<property name="address"><value>Pune, Maharashtra</value></property>
+	</bean>
+	<bean class="com.spring.core.springproj.pojo.Student" name="student2">
+		<property name="studentId" value="2"></property>
+		<property name="name" value="Deepti"></property>
+		<property name="address" value="Safdarjung, New Delhi"></property>
+	</bean>
+	<bean class="com.spring.core.springproj.pojo.Student" name="student3" p:studentId="3" p:name="Sharad" p:address="Belgaum, Karnataka"></bean>
+    <!-- bean definitions here -->
+
+</beans>
